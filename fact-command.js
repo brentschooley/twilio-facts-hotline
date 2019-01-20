@@ -6,7 +6,7 @@ exports.handler = function(context, event, callback) {
   switch(command) {
     case 'cat':
       twiml.say('Fetching your cat fact.');
-      twiml.redirect('cat-facts');
+      twiml.redirect('/cat-facts');
       break;
     case 'number':
       twiml.say('Fetching your number fact.');
